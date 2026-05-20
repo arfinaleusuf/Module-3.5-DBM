@@ -1,0 +1,12 @@
+CREATE DATABASE Practice3_5;
+
+USE Practice3_5;
+
+CREATE TABLE Employee (
+    EmpId INT PRIMARY KEY,
+    EmpName VARCHAR(100) NOT NULL,
+    JoiningYear YEAR NOT NULL,
+    Birthday DATE CHECK (Birthday < '2000-01-01'),
+    Designation VARCHAR(50) NOT NULL,
+    Salary DECIMAL(10,2) CHECK (Salary > 0)
+);
