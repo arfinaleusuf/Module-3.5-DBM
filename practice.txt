@@ -10,3 +10,12 @@ CREATE TABLE Employee (
     Designation VARCHAR(50) NOT NULL,
     Salary DECIMAL(10,2) CHECK (Salary > 0)
 );
+
+Composite PRIMARY KEY:
+CREATE TABLE StudentCourse (
+    StudentId INT,
+    CourseId INT,
+    EnrollDate DATE,
+    
+    PRIMARY KEY (StudentId, CourseId)
+);
