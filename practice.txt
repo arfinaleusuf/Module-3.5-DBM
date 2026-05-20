@@ -19,3 +19,14 @@ CREATE TABLE StudentCourse (
     
     PRIMARY KEY (StudentId, CourseId)
 );
+
+---Limit and offset---
+SELECT * 
+FROM Employee
+LIMIT 5 
+OFFSET 10;
+
+--- only Limit ---
+SELECT * 
+FROM Employee
+LIMIT 10, 5;
